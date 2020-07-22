@@ -12,6 +12,13 @@ public func configure(_ app: Application) throws {
     
     // register routes
 //    try routes(app)
-    let router = FrontendRouter()
-    try router.boot(routes: app.routes)
+//    let router = FrontendRouter()
+//    try router.boot(routes: app.routes)
+    let routers: [RouteCollection] = [
+        FrontendRouter(),
+        BlogRouter(),
+    ]
+    for router in routers {
+        try router.boot(routes: app.routes)
+    }
 }
