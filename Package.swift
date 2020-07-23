@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "LeafTemplate",
+    name: "MyBlog",
     platforms: [
        .macOS(.v10_15)
     ],
