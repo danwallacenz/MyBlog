@@ -29,9 +29,7 @@ public func configure(_ app: Application) throws {
             BlogModule(),
         ]
 
-        for module in modules {
-            try module.configure(app)
-        }
-    
-
+    for module in modules {
+        try module.configure(app)
+    }
 }
