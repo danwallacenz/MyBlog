@@ -6,5 +6,6 @@ struct BlogRouter: RouteCollection {
     
     func boot(routes: RoutesBuilder) throws {
         routes.get("blog", use: self.controller.blogView)
+        routes.get(.anything, use: self.controller.postView)
     }
 }
